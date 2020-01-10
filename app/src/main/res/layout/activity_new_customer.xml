@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayBackGround"
+    tools:context=".NewCustomer">
+
+    <TextView
+        android:id="@+id/newCustomer"
+        android:textSize="50sp"
+        android:textColor="@color/activityTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Customer"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newCustomer"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        >
+
+
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/name"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+             android:textColor="@color/grayBackGround"
+            android:hint="Name"
+            android:textColorHint="@color/grayBackGround"
+            android:background="@drawable/inputtext"
+             />
+
+        <EditText
+            android:inputType="textFilter"
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grayBackGround"
+            android:hint="Phone#"
+            android:textColorHint="@color/grayBackGround"
+            android:background="@drawable/inputtext"
+            />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:inputType="textFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/grayBackGround"
+            android:layout_marginTop="10dp"
+
+            android:hint="Email"
+            android:textColorHint="@color/grayBackGround"
+            android:background="@drawable/inputtext"
+            />
+
+        <EditText
+            android:id="@+id/street"
+            android:inputType="textFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grayBackGround"
+
+            android:hint="Street"
+            android:textColorHint="@color/grayBackGround"
+            android:background="@drawable/inputtext"
+            />
+
+        <EditText
+            android:id="@+id/house_number"
+            android:inputType="textFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grayBackGround"
+
+
+            android:hint="House#"
+            android:textColorHint="@color/grayBackGround"
+            android:background="@drawable/inputtext"
+            />
+
+        <EditText
+            android:id="@+id/city"
+            android:inputType="textFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grayBackGround"
+
+            android:hint="City"
+            android:textColorHint="@color/grayBackGround"
+            android:background="@drawable/inputtext"
+            />
+
+        <TextView
+            android:id="@+id/save"
+            android:background="@drawable/roundedbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+
+            android:layout_marginTop="30dp"
+            android:textSize="40sp"
+            android:textColor="@color/buttonTextBlack"
+
+            android:text="Save"
+            android:onClick="save"/>
+
+        <TextView
+
+            android:background="@drawable/roundedbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="30dp"
+            android:textSize="40sp"
+            android:textColor="@color/buttonTextBlack"
+            android:gravity="center"
+            android:onClick="goToMain"
+
+            android:text="Main Menu" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
